@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
 }
+
 body{
-    /* background-color: #646881; */
     background-image: url(img.jpeg);
     background-size: cover;
     text-align: center;
@@ -13,6 +13,7 @@ body{
     from{ color: red;}
     to{ color: purple;}
 }
+
 h1{
     color: white;
     margin-top: 3vmin;
@@ -46,6 +47,7 @@ h1{
     color: #62BEC1;
     background-color: #646881;
 }
+
 #reset{
     font-size: 1.6rem;
     background-color: #404E4D;
@@ -54,6 +56,7 @@ h1{
     padding: 1rem;
     border: none;
 }
+
 .newgame{
     font-size: 1.6rem;
     background-color: #404E4D;
@@ -72,13 +75,14 @@ h1{
 }
 
 .msg-container{
-    height: 100vmin;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 5rem;
 }
+
 .msg{
     font-size : 6vmin;
     color: white;

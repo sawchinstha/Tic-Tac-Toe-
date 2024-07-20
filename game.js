@@ -21,7 +21,6 @@ const winPatterns = [
 
 btns.forEach((box)=>{
     box.addEventListener("click", () =>{
-        console.log("The box was clicked");
         if (turnX === true){ // Player 1
             box.innerText = "X";
             box.style.color = "red";
@@ -37,7 +36,7 @@ btns.forEach((box)=>{
         let isWinner = checkWinner();
 
 
-        if ( count === 9 && !isWinner ){
+        if (count === 9 && !isWinner){
             gameDraw();
         };
     });
@@ -51,13 +50,13 @@ const gameDraw = () => {
     maincontainer.classList.add("hide");
 }
 
-const disableBtns = () =>{
-    for ( let btn of btns){
+const disableBtns = () => {
+    for (let btn of btns) {
         btn.disabled = true;
     }
 };
 
-const enableBtns = () =>{
+const enableBtns = () => {
     for ( let btn of btns){
         btn.disabled = false;
         btn.innerText = "";
